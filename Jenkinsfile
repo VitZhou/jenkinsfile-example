@@ -1,4 +1,4 @@
-stages {
+node{
     stage('Build') {
         steps {
             sh 'echo "start build"'
