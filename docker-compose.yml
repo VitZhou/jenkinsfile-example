@@ -1,0 +1,8 @@
+version: '3'
+services:
+  jenkin-demo:
+    image: 192.168.31.34/jenkins/jenkins-demo:latest
+    stdin_open: true
+    ports:
+      - 38080:8080
+    restart: unless-stopped
