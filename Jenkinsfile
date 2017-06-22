@@ -5,7 +5,7 @@ node{
     stage('Build') {
         steps {
             sh 'echo "start build"'
-            sh 'maven clean package'
+            sh 'mvn clean package'
         }
     }
     stage('Sonar') {
