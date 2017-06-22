@@ -1,4 +1,7 @@
 node{
+    stage ('Checkout') {
+        git 'https://github.com/henryZ/jenkinsfile-example.git'
+    }
     stage('Build') {
         steps {
             sh 'echo "start build"'
