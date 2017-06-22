@@ -1,6 +1,6 @@
 node{
     stage('Checkout') {
-        git 'git@github.com:henryZ/jenkinsfile-example.git'
+        checkout([$class: "GitSCM", branches: [[name: "master"]], userRemoteConfigs: [[url: "https://github.com/henryZ/jenkinsfile-example.git"]]])
     }
     stage('Build') {
         sh 'echo "start build"'
